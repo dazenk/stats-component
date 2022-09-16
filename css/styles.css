@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: 100vw;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233deg, 47%, 7%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  border-radius: 10px;
+  background-color: hsl(244deg, 38%, 16%);
+  max-width: 69rem;
+  height: 28rem;
+}
+.container .text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 70px 60px 60px 60px;
+  box-sizing: border-box;
+}
+.container .text .description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.container .text .description h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+.container .text .description h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.container .text .description p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  width: 90%;
+}
+.container .text .stats {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .text .stats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.container .text .stats .stat h2 {
+  align-self: flex-start;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.container .text .stats .stat p {
+  align-self: flex-start;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.container .image {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.container .image .layer {
+  background-color: hsla(277deg, 80%, 40%, 0.5);
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container .image img {
+  position: absolute;
+  border-radius: 0 10px 10px 0;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 27rem;
+    height: 65rem;
+    margin: 20px 0 20px 0;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .container .text {
+    padding: 50px 45px 45px 45px;
+    width: 100%;
+    height: 69%;
+    gap: 33px;
+  }
+  .container .text .description {
+    gap: 18px;
+    width: 100%;
+  }
+  .container .text .description h1 {
+    text-align: center;
+  }
+  .container .text .description p {
+    line-height: 33px;
+    font-size: 21px;
+    text-align: center;
+    width: 100%;
+  }
+  .container .text .stats {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container .text .stats .stat {
+    gap: 8px;
+  }
+  .container .text .stats .stat h2 {
+    font-size: 32px;
+    align-self: center;
+  }
+  .container .text .stats .stat p {
+    font-size: 16px;
+    align-self: center;
+  }
+  .container .image {
+    width: 100%;
+    height: 31%;
+  }
+  .container .image .layer {
+    border-radius: 10px 10px 0 0;
+  }
+  .container .image img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 0 0;
+  }
+}
+@media (max-width: 475px) {
+  .container {
+    width: 20rem;
+    height: 50rem;
+  }
+  .container .text {
+    gap: 25px;
+    height: 75%;
+    padding: 30px 25px 25px 25px;
+  }
+  .container .text .description h1 {
+    font-size: 28px;
+  }
+  .container .text .description p {
+    font-size: 18px;
+  }
+  .container .text .stats .stat h2 {
+    font-size: 28px;
+  }
+  .container .text .stats .stat p {
+    font-size: 14px;
+  }
+  .container .image {
+    height: 25%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
